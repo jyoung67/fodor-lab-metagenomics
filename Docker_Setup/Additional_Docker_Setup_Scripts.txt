@@ -1,0 +1,39 @@
+./.bash_history:echo "export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc
+
+# Add environment variable to user profile
+"export DOCKER_HOST=tcp://localhost:2375" >> ~/.bashrc && source ~/.bashrc
+
+# Find file with DOCKER_HOST in it
+find -type f -exec grep -IH 'DOCKER_HOST' {} \;
+#Error message
+docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+
+# Works
+sudo docker -H tcp://localhost:2375 run hello-world
+
+# Does not work
+sudo docker -run hello-world
+# Error message
+docker: Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?.
+
+find -type f -exec grep -IH '/usr/bin/dockerd' {} \;
+./etc/init/docker.conf: DOCKERD=/usr/bin/dockerd
+./etc/init.d/docker:DOCKERD=/usr/bin/dockerd
+
+export DOCKER_HOST=tcp://localhost:2375
+
+# Remove DOCKER
+sudo apt-get purge docker-ce docker-ce-cli containerd.io
+sudo rm -rf /var/lib/docker
+
+# Install docker client command
+curl https://download.docker.com/linux/static/stable/x86_64/docker-19.03.8.tgz | tar xvz --directory /tmp && sudo mv -v /tmp/docker/docker /usr/local/bin/docker && chmod +x /usr/local/bin/docker && rm -rf /tmp/docker
+
+# Open profile file
+sudo vim ~/.bashrc
+
+# Add the following line to the end of the profile file
+alias docker="docker -H=tcp://localhost:2375"
+
+# Persist the change
+source ~/.bashrc

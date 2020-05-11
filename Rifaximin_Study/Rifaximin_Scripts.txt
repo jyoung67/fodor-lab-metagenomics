@@ -1,0 +1,10 @@
+cd /mnt/c/Users/young/Documents/Fodor_Lab/BioLockJ_Downloads/
+
+tar -zxf BioLockJ-v1.3.2.tar.gz --directory /mnt/c/Users/young/Documents/Fodor_Lab/BioLockJ/
+
+
+cd /mnt/c/Users/young/Documents/BioLockJ
+
+./install
+
+source ~/.bashrc

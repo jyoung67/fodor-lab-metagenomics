@@ -1,0 +1,49 @@
+ssh jyoun144@mamba.urc.uncc.edu
+
+*****************Run Spades Job********************
+
+qsub -N BC30_result_01 spadescript.sh
+
+
+
+/users/jyoun144/BC30.fastq
+
+/users/jyoun144/lab02/
+
+
+**************Transfer Result Files to local machine***************************
+
+
+tar -cvf spades_result.tar contigs.fasta contigs.paths assembly_graph.fastg assembly_graph_with_scaffolds.gfa before_rr.fasta BC30_result_01.o41322 dataset.info input_dataset.yaml params.txt run_spades.sh run_spades.yaml scaffolds.fasta scaffolds.paths spadescript.sh
+
+
+
+
+sftp jyoun144@mamba.urc.uncc.edu:/users/jyoun144/lab02/spades_result.tar /mnt/c/Users/young/Documents/UNCC_Spring_2020/Genomics/labs/lab02/a_results/
+
+************QUAST Commands******************
+
+/home/youngjb/quast-5.0.2/quast.py /mnt/c/Users/young/Documents/UNCC_Spring_2020/Genomics/labs/lab02/a_results/result_BC30/contigs.fasta -t 500 -o /mnt/c/Users/young/Documents/UNCC_Spring_2020/Genomics/labs/lab02/a_results/result_BC30/findings2 
+
+
+
+If you have IonTorrent unpaired reads, PacBio CLR and additional reliable contigs:
+
+
+    it_reads.fastq
+    pacbio_clr.fastq
+    contigs.fasta
+
+run SPAdes with the following command:
+
+
+    spades.py --iontorrent -s it_reads.fastq /
+    --pacbio pacbio_clr.fastq --trusted-contigs contigs.fastq /
+    -o spades_output
+
+
+
+ ./quast.py test_data/contigs_1.fasta /
+               test_data/contigs_2.fasta /
+               -r test_data/reference.fasta.gz /
+               -g test_data/genes.gff

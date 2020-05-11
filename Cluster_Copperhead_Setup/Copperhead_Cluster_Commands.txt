@@ -1,0 +1,82 @@
+# VPN URI
+vpn.uncc.edu
+
+# Connect to Copperhead Cluster
+ssh jyoun144@hpc.uncc.edu
+
+cp -a /source/. /dest/
+
+# Execute from my local machine
+sftp -r jyoun144@hpc.uncc.edu:/projects/afodor_research/aduong/effectSize/ /mnt/c/Users/young/Documents/Fodor_Lab/Anh_Lab_Files/Cluster_Items/
+sftp jyoun144@hpc.uncc.edu
+# Transferred SRA Toolkit tar.gz file to cluster
+scp /mnt/c/Users/young/Documents/Fodor_Lab/SRAToolkit/sratoolkit.2.10.5-ubuntu64.tar.gz jyoun144@hpc.uncc.edu:/projects/afodor_research/jyoung/sraToolkit/
+tar -zxvf sratoolkit.2.10.5-ubuntu64.tar.gz
+
+# Create new directories on Copperhead Cluster
+mkdir -p /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/
+mkdir -p /projects/afodor_research/jyoung/rifaximin/
+mkdir /projects/afodor_research/jyoung/sraToolkit/
+
+
+
+tar -zxvf /mnt/c/Users/young/Documents/Fodor_Lab/SRAToolkit/sratoolkit.2.10.5-ubuntu64.tar.gz --directory /mnt/c/Users/young/Documents/Fodor_Lab/SRAToolkit/
+
+# Configure SRA Toolkit
+./vdb-config -i
+
+
+/mnt/c/Users/young/Documents/Fodor_Lab/SRAToolkit/sratoolkit.2.10.5-ubuntu64/bin/fasterq-dump SRR5799796 -O /mnt/c/Users/young/Documents/Fodor_Lab/SRA_Tests/
+
+/mnt/c/Users/young/Documents/Fodor_Lab/SRAToolkit/sratoolkit.2.10.5-ubuntu64/bin/fastq-dump SRR5800485 -O /mnt/c/Users/young/Documents/Fodor_Lab/SRA_Tests/ --gzip
+
+module load sra-tools
+
+
+cd /projects/afodor_research/jyoung/srascripts \ 
+vim sra_SRR5799796.sh
+
+qsub -N sra_SRR5799796_Repeat sra_SRR5799796.sh
+
+fasterq-dump SRR5799796 --split-files --skip-technical -O /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/
+/projects/afodor_research/jyoung/sraToolkit/sratoolkit.2.10.5-ubuntu64/bin/fasterq-dump SRR5799796 --split-files --skip-technical -O /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/
+
+
+
+conda create -n project_rifaximin -c bioconda fastqc
+conda env remove -n project-rifaximin
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash
+#=====OPTIONS=====
+#PBS -q mamba
+#PBS -N nickname
+#PBS -l nodes=2:ppn=16
+#PBS -l walltime=2:00:00
+#PBS -l prologue=/users/jyoun144/path/for/prologue.sh,epilogue=/users/jyoun144/path/for/epiloque.sh
+#=====END PBS OPTIONS====
+module load anaconda3
+eval "$(conda shell.bash hook)"
+conda activate spades
+spades.py -s /users/jyoun144/BC30.fastq -iontorrent -k 21,33,55,77,99,127 -o /users/jyoun144/lab02/
+conda deactivate            
+
+
+
+
+
+
+
+
+

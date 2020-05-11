@@ -1,0 +1,464 @@
+[jyoun144@cph-i1 ~]$ cd /projects/afodor_research/jyoung/srascripts
+[jyoun144@cph-i1 srascripts]$ sh sradownload.sh SRR5799796,SRR5799797,SRR5799798,SRR5799799,SRR5799800,SRR5799801,SRR5799802,SRR5799803,SRR5799804,SRR5799805,SRR5799806,SRR5799807,SRR5799808,SRR5799809,SRR5799810,SRR5799811,SRR5799812,SRR5799813,SRR5799814,SRR5799815,SRR5799816,SRR5799817,SRR5799818,SRR5799819,SRR5799820,SRR5799821,SRR5799822,SRR5799823,SRR5799824,SRR5799825,SRR5799826,SRR5799827,SRR5799828,SRR5799829,SRR5799830,SRR5799831,SRR5799832,SRR5799833,SRR5799834,SRR5799835,SRR5799836,SRR5799837,SRR5799838,SRR5799839,SRR5799840,SRR5799841,SRR5799842,SRR5799843,SRR5799844,SRR5799845
+Start Time:  2020/05/11 05:09:35
+Array length  50
+**********(1/50):Downloading SRR5799796**********
+spots read      : 563,994
+reads read      : 1,127,988
+reads written   : 1,127,988
+**********(2/50):Downloading SRR5799797**********
+spots read      : 2,154,959
+reads read      : 4,309,918
+reads written   : 4,309,918
+**********(3/50):Downloading SRR5799798**********
+2020-05-11T09:16:36 fasterq-dump.2.9.4 err: cmn_iter.c cmn_read_uint8_array( #451057 ).VCursorCellDataDirect() -> RC(rcNS,rcFile,rcReading,rcTransfer,rcIncomplete)
+2020-05-11T09:16:36 fasterq-dump.2.9.4 err: row #451057 : READ.len(302) != QUALITY.len(0)
+2020-05-11T09:16:36 fasterq-dump.2.9.4 fatal: SIGNAL - Segmentation fault
+**********(4/50):Downloading SRR5799799**********
+2020-05-11T09:18:48 fasterq-dump.2.9.4 err: cmn_iter.c cmn_read_uint8_array( #322725 ).VCursorCellDataDirect() -> RC(rcNS,rcFile,rcReading,rcTransfer,rcIncomplete)
+2020-05-11T09:18:48 fasterq-dump.2.9.4 err: row #322725 : READ.len(302) != QUALITY.len(0)
+2020-05-11T09:18:48 fasterq-dump.2.9.4 fatal: SIGNAL - Segmentation fault
+**********(5/50):Downloading SRR5799800**********
+spots read      : 1,883,138
+reads read      : 3,766,276
+reads written   : 3,766,276
+**********(6/50):Downloading SRR5799801**********
+spots read      : 1,020,679
+reads read      : 2,041,358
+reads written   : 2,041,358
+**********(7/50):Downloading SRR5799802**********
+spots read      : 1,480,367
+reads read      : 2,960,734
+reads written   : 2,960,734
+**********(8/50):Downloading SRR5799803**********
+spots read      : 36,941
+reads read      : 73,882
+reads written   : 73,882
+**********(9/50):Downloading SRR5799804**********
+spots read      : 1,546,788
+reads read      : 3,093,576
+reads written   : 3,093,576
+**********(10/50):Downloading SRR5799805**********
+spots read      : 542,514
+reads read      : 1,085,028
+reads written   : 1,085,028
+**********(11/50):Downloading SRR5799806**********
+spots read      : 453,604
+reads read      : 907,208
+reads written   : 907,208
+**********(12/50):Downloading SRR5799807**********
+spots read      : 23,357
+reads read      : 46,714
+reads written   : 46,714
+**********(13/50):Downloading SRR5799808**********
+spots read      : 904,098
+reads read      : 1,808,196
+reads written   : 1,808,196
+**********(14/50):Downloading SRR5799809**********
+spots read      : 1,820,089
+reads read      : 3,640,178
+reads written   : 3,640,178
+**********(15/50):Downloading SRR5799810**********
+spots read      : 23,298
+reads read      : 46,596
+reads written   : 46,596
+**********(16/50):Downloading SRR5799811**********
+spots read      : 1,647,775
+reads read      : 3,295,550
+reads written   : 3,295,550
+**********(17/50):Downloading SRR5799812**********
+spots read      : 1,295,378
+reads read      : 2,590,756
+reads written   : 2,590,756
+**********(18/50):Downloading SRR5799813**********
+spots read      : 308,423
+reads read      : 616,846
+reads written   : 616,846
+**********(19/50):Downloading SRR5799814**********
+spots read      : 1,979,002
+reads read      : 3,958,004
+reads written   : 3,958,004
+**********(20/50):Downloading SRR5799815**********
+spots read      : 1,820,803
+reads read      : 3,641,606
+reads written   : 3,641,606
+**********(21/50):Downloading SRR5799816**********
+spots read      : 1,958,410
+reads read      : 3,916,820
+reads written   : 3,916,820
+**********(22/50):Downloading SRR5799817**********
+spots read      : 1,514,527
+reads read      : 3,029,054
+reads written   : 3,029,054
+**********(23/50):Downloading SRR5799818**********
+spots read      : 925,298
+reads read      : 1,850,596
+reads written   : 1,850,596
+**********(24/50):Downloading SRR5799819**********
+spots read      : 139,144
+reads read      : 278,288
+reads written   : 278,288
+**********(25/50):Downloading SRR5799820**********
+spots read      : 134,790
+reads read      : 269,580
+reads written   : 269,580
+**********(26/50):Downloading SRR5799821**********
+spots read      : 948,430
+reads read      : 1,896,860
+reads written   : 1,896,860
+**********(27/50):Downloading SRR5799822**********
+spots read      : 213,084
+reads read      : 426,168
+reads written   : 426,168
+**********(28/50):Downloading SRR5799823**********
+spots read      : 1,752,147
+reads read      : 3,504,294
+reads written   : 3,504,294
+**********(29/50):Downloading SRR5799824**********
+spots read      : 265,468
+reads read      : 530,936
+reads written   : 530,936
+**********(30/50):Downloading SRR5799825**********
+spots read      : 1,555,946
+reads read      : 3,111,892
+reads written   : 3,111,892
+**********(31/50):Downloading SRR5799826**********
+spots read      : 1,186,665
+reads read      : 2,373,330
+reads written   : 2,373,330
+**********(32/50):Downloading SRR5799827**********
+spots read      : 1,310,238
+reads read      : 2,620,476
+reads written   : 2,620,476
+**********(33/50):Downloading SRR5799828**********
+spots read      : 1,425,275
+reads read      : 2,850,550
+reads written   : 2,850,550
+**********(34/50):Downloading SRR5799829**********
+spots read      : 1,129,442
+reads read      : 2,258,884
+reads written   : 2,258,884
+**********(35/50):Downloading SRR5799830**********
+2020-05-11T10:31:25 fasterq-dump.2.9.4 err: cmn_iter.c cmn_read_String( #800985 ).VCursorCellDataDirect() -> RC(rcNS,rcFile,rcReading,rcTransfer,rcIncomplete)
+**********(36/50):Downloading SRR5799831**********
+spots read      : 1,198,465
+reads read      : 2,396,930
+reads written   : 2,396,930
+**********(37/50):Downloading SRR5799832**********
+spots read      : 1,363,454
+reads read      : 2,726,908
+reads written   : 2,726,908
+**********(38/50):Downloading SRR5799833**********
+spots read      : 649,052
+reads read      : 1,298,104
+reads written   : 1,298,104
+**********(39/50):Downloading SRR5799834**********
+spots read      : 1,800,951
+reads read      : 3,601,902
+reads written   : 3,601,902
+**********(40/50):Downloading SRR5799835**********
+spots read      : 1,941,498
+reads read      : 3,882,996
+reads written   : 3,882,996
+**********(41/50):Downloading SRR5799836**********
+spots read      : 1,150,600
+reads read      : 2,301,200
+reads written   : 2,301,200
+**********(42/50):Downloading SRR5799837**********
+spots read      : 270,342
+reads read      : 540,684
+reads written   : 540,684
+**********(43/50):Downloading SRR5799838**********
+spots read      : 695,992
+reads read      : 1,391,984
+reads written   : 1,391,984
+**********(44/50):Downloading SRR5799839**********
+spots read      : 701,423
+reads read      : 1,402,846
+reads written   : 1,402,846
+**********(45/50):Downloading SRR5799840**********
+spots read      : 666,248
+reads read      : 1,332,496
+reads written   : 1,332,496
+**********(46/50):Downloading SRR5799841**********
+spots read      : 1,792,291
+reads read      : 3,584,582
+reads written   : 3,584,582
+**********(47/50):Downloading SRR5799842**********
+spots read      : 1,606,720
+reads read      : 3,213,440
+reads written   : 3,213,440
+**********(48/50):Downloading SRR5799843**********
+spots read      : 1,164,116
+reads read      : 2,328,232
+reads written   : 2,328,232
+**********(49/50):Downloading SRR5799844**********
+spots read      : 1,837,912
+reads read      : 3,675,824
+reads written   : 3,675,824
+**********(50/50):Downloading SRR5799845**********
+spots read      : 388,581
+reads read      : 777,162
+reads written   : 777,162
+End Time:  2020/05/11 07:07:54
+[jyoun144@cph-i1 srascripts]$  cd /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/
+[jyoun144@cph-i1 R1]$ ls
+SRR5799796_1.fastq  SRR5799804_1.fastq  SRR5799810_1.fastq  SRR5799816_1.fastq  SRR5799822_1.fastq  SRR5799828_1.fastq  SRR5799835_1.fastq  SRR5799841_1.fastq
+SRR5799796_2.fastq  SRR5799804_2.fastq  SRR5799810_2.fastq  SRR5799816_2.fastq  SRR5799822_2.fastq  SRR5799828_2.fastq  SRR5799835_2.fastq  SRR5799841_2.fastq
+SRR5799797_1.fastq  SRR5799805_1.fastq  SRR5799811_1.fastq  SRR5799817_1.fastq  SRR5799823_1.fastq  SRR5799829_1.fastq  SRR5799836_1.fastq  SRR5799842_1.fastq
+SRR5799797_2.fastq  SRR5799805_2.fastq  SRR5799811_2.fastq  SRR5799817_2.fastq  SRR5799823_2.fastq  SRR5799829_2.fastq  SRR5799836_2.fastq  SRR5799842_2.fastq
+SRR5799800_1.fastq  SRR5799806_1.fastq  SRR5799812_1.fastq  SRR5799818_1.fastq  SRR5799824_1.fastq  SRR5799831_1.fastq  SRR5799837_1.fastq  SRR5799843_1.fastq
+SRR5799800_2.fastq  SRR5799806_2.fastq  SRR5799812_2.fastq  SRR5799818_2.fastq  SRR5799824_2.fastq  SRR5799831_2.fastq  SRR5799837_2.fastq  SRR5799843_2.fastq
+SRR5799801_1.fastq  SRR5799807_1.fastq  SRR5799813_1.fastq  SRR5799819_1.fastq  SRR5799825_1.fastq  SRR5799832_1.fastq  SRR5799838_1.fastq  SRR5799844_1.fastq
+SRR5799801_2.fastq  SRR5799807_2.fastq  SRR5799813_2.fastq  SRR5799819_2.fastq  SRR5799825_2.fastq  SRR5799832_2.fastq  SRR5799838_2.fastq  SRR5799844_2.fastq
+SRR5799802_1.fastq  SRR5799808_1.fastq  SRR5799814_1.fastq  SRR5799820_1.fastq  SRR5799826_1.fastq  SRR5799833_1.fastq  SRR5799839_1.fastq  SRR5799845_1.fastq
+SRR5799802_2.fastq  SRR5799808_2.fastq  SRR5799814_2.fastq  SRR5799820_2.fastq  SRR5799826_2.fastq  SRR5799833_2.fastq  SRR5799839_2.fastq  SRR5799845_2.fastq
+SRR5799803_1.fastq  SRR5799809_1.fastq  SRR5799815_1.fastq  SRR5799821_1.fastq  SRR5799827_1.fastq  SRR5799834_1.fastq  SRR5799840_1.fastq
+SRR5799803_2.fastq  SRR5799809_2.fastq  SRR5799815_2.fastq  SRR5799821_2.fastq  SRR5799827_2.fastq  SRR5799834_2.fastq  SRR5799840_2.fastq
+
+Compressing File -> SRR5799796_1.fastq
+SRR5799796_1.fastq:      79.0% -- replaced with SRR5799796_1.fastq.gz
+Compressing File -> SRR5799796_2.fastq
+SRR5799796_2.fastq:      78.9% -- replaced with SRR5799796_2.fastq.gz
+Compressing File -> SRR5799797_1.fastq
+SRR5799797_1.fastq:      79.1% -- replaced with SRR5799797_1.fastq.gz
+Compressing File -> SRR5799797_2.fastq
+SRR5799797_2.fastq:      80.7% -- replaced with SRR5799797_2.fastq.gz
+Compressing File -> SRR5799800_1.fastq
+SRR5799800_1.fastq:      81.8% -- replaced with SRR5799800_1.fastq.gz
+Compressing File -> SRR5799800_2.fastq
+SRR5799800_2.fastq:      79.3% -- replaced with SRR5799800_2.fastq.gz
+Compressing File -> SRR5799801_1.fastq
+SRR5799801_1.fastq:      75.9% -- replaced with SRR5799801_1.fastq.gz
+Compressing File -> SRR5799801_2.fastq
+SRR5799801_2.fastq:      79.3% -- replaced with SRR5799801_2.fastq.gz
+Compressing File -> SRR5799802_1.fastq
+SRR5799802_1.fastq:      79.4% -- replaced with SRR5799802_1.fastq.gz
+Compressing File -> SRR5799802_2.fastq
+SRR5799802_2.fastq:      81.7% -- replaced with SRR5799802_2.fastq.gz
+Compressing File -> SRR5799803_1.fastq
+SRR5799803_1.fastq:      77.9% -- replaced with SRR5799803_1.fastq.gz
+Compressing File -> SRR5799803_2.fastq
+SRR5799803_2.fastq:      78.1% -- replaced with SRR5799803_2.fastq.gz
+Compressing File -> SRR5799804_1.fastq
+SRR5799804_1.fastq:      79.2% -- replaced with SRR5799804_1.fastq.gz
+Compressing File -> SRR5799804_2.fastq
+SRR5799804_2.fastq:      81.5% -- replaced with SRR5799804_2.fastq.gz
+Compressing File -> SRR5799805_1.fastq
+SRR5799805_1.fastq:      75.1% -- replaced with SRR5799805_1.fastq.gz
+Compressing File -> SRR5799805_2.fastq
+SRR5799805_2.fastq:      79.7% -- replaced with SRR5799805_2.fastq.gz
+Compressing File -> SRR5799806_1.fastq
+SRR5799806_1.fastq:      79.7% -- replaced with SRR5799806_1.fastq.gz
+Compressing File -> SRR5799806_2.fastq
+SRR5799806_2.fastq:      75.2% -- replaced with SRR5799806_2.fastq.gz
+Compressing File -> SRR5799807_1.fastq
+SRR5799807_1.fastq:      76.7% -- replaced with SRR5799807_1.fastq.gz
+Compressing File -> SRR5799807_2.fastq
+SRR5799807_2.fastq:      76.8% -- replaced with SRR5799807_2.fastq.gz
+Compressing File -> SRR5799808_1.fastq
+SRR5799808_1.fastq:      75.8% -- replaced with SRR5799808_1.fastq.gz
+Compressing File -> SRR5799808_2.fastq
+SRR5799808_2.fastq:      79.6% -- replaced with SRR5799808_2.fastq.gz
+Compressing File -> SRR5799809_1.fastq
+SRR5799809_1.fastq:      79.0% -- replaced with SRR5799809_1.fastq.gz
+Compressing File -> SRR5799809_2.fastq
+SRR5799809_2.fastq:      81.2% -- replaced with SRR5799809_2.fastq.gz
+Compressing File -> SRR5799810_1.fastq
+SRR5799810_1.fastq:      76.7% -- replaced with SRR5799810_1.fastq.gz
+Compressing File -> SRR5799810_2.fastq
+SRR5799810_2.fastq:      76.9% -- replaced with SRR5799810_2.fastq.gz
+Compressing File -> SRR5799811_1.fastq
+SRR5799811_1.fastq:      80.7% -- replaced with SRR5799811_1.fastq.gz
+Compressing File -> SRR5799811_2.fastq
+SRR5799811_2.fastq:      79.0% -- replaced with SRR5799811_2.fastq.gz
+Compressing File -> SRR5799812_1.fastq
+SRR5799812_1.fastq:      78.5% -- replaced with SRR5799812_1.fastq.gz
+Compressing File -> SRR5799812_2.fastq
+SRR5799812_2.fastq:      79.3% -- replaced with SRR5799812_2.fastq.gz
+Compressing File -> SRR5799813_1.fastq
+SRR5799813_1.fastq:      79.0% -- replaced with SRR5799813_1.fastq.gz
+Compressing File -> SRR5799813_2.fastq
+SRR5799813_2.fastq:      79.6% -- replaced with SRR5799813_2.fastq.gz
+Compressing File -> SRR5799814_1.fastq
+SRR5799814_1.fastq:      82.3% -- replaced with SRR5799814_1.fastq.gz
+Compressing File -> SRR5799814_2.fastq
+SRR5799814_2.fastq:      79.9% -- replaced with SRR5799814_2.fastq.gz
+Compressing File -> SRR5799815_1.fastq
+SRR5799815_1.fastq:      82.0% -- replaced with SRR5799815_1.fastq.gz
+Compressing File -> SRR5799815_2.fastq
+SRR5799815_2.fastq:      79.6% -- replaced with SRR5799815_2.fastq.gz
+Compressing File -> SRR5799816_1.fastq
+SRR5799816_1.fastq:      79.2% -- replaced with SRR5799816_1.fastq.gz
+Compressing File -> SRR5799816_2.fastq
+SRR5799816_2.fastq:      81.7% -- replaced with SRR5799816_2.fastq.gz
+Compressing File -> SRR5799817_1.fastq
+SRR5799817_1.fastq:      80.8% -- replaced with SRR5799817_1.fastq.gz
+Compressing File -> SRR5799817_2.fastq
+SRR5799817_2.fastq:      79.0% -- replaced with SRR5799817_2.fastq.gz
+Compressing File -> SRR5799818_1.fastq
+SRR5799818_1.fastq:      79.9% -- replaced with SRR5799818_1.fastq.gz
+Compressing File -> SRR5799818_2.fastq
+SRR5799818_2.fastq:      79.1% -- replaced with SRR5799818_2.fastq.gz
+Compressing File -> SRR5799819_1.fastq
+SRR5799819_1.fastq:      79.2% -- replaced with SRR5799819_1.fastq.gz
+Compressing File -> SRR5799819_2.fastq
+SRR5799819_2.fastq:      79.3% -- replaced with SRR5799819_2.fastq.gz
+Compressing File -> SRR5799820_1.fastq
+SRR5799820_1.fastq:      74.2% -- replaced with SRR5799820_1.fastq.gz
+Compressing File -> SRR5799820_2.fastq
+SRR5799820_2.fastq:      79.4% -- replaced with SRR5799820_2.fastq.gz
+Compressing File -> SRR5799821_1.fastq
+SRR5799821_1.fastq:      79.5% -- replaced with SRR5799821_1.fastq.gz
+Compressing File -> SRR5799821_2.fastq
+SRR5799821_2.fastq:      75.9% -- replaced with SRR5799821_2.fastq.gz
+Compressing File -> SRR5799822_1.fastq
+SRR5799822_1.fastq:      80.4% -- replaced with SRR5799822_1.fastq.gz
+Compressing File -> SRR5799822_2.fastq
+SRR5799822_2.fastq:      78.7% -- replaced with SRR5799822_2.fastq.gz
+Compressing File -> SRR5799823_1.fastq
+SRR5799823_1.fastq:      79.8% -- replaced with SRR5799823_1.fastq.gz
+Compressing File -> SRR5799823_2.fastq
+SRR5799823_2.fastq:      81.9% -- replaced with SRR5799823_2.fastq.gz
+Compressing File -> SRR5799824_1.fastq
+SRR5799824_1.fastq:      78.9% -- replaced with SRR5799824_1.fastq.gz
+Compressing File -> SRR5799824_2.fastq
+SRR5799824_2.fastq:      74.0% -- replaced with SRR5799824_2.fastq.gz
+Compressing File -> SRR5799825_1.fastq
+SRR5799825_1.fastq:      79.1% -- replaced with SRR5799825_1.fastq.gz
+Compressing File -> SRR5799825_2.fastq
+SRR5799825_2.fastq:      79.0% -- replaced with SRR5799825_2.fastq.gz
+Compressing File -> SRR5799826_1.fastq
+SRR5799826_1.fastq:      80.0% -- replaced with SRR5799826_1.fastq.gz
+Compressing File -> SRR5799826_2.fastq
+SRR5799826_2.fastq:      79.6% -- replaced with SRR5799826_2.fastq.gz
+Compressing File -> SRR5799827_1.fastq
+SRR5799827_1.fastq:      79.2% -- replaced with SRR5799827_1.fastq.gz
+Compressing File -> SRR5799827_2.fastq
+SRR5799827_2.fastq:      80.0% -- replaced with SRR5799827_2.fastq.gz
+Compressing File -> SRR5799828_1.fastq
+SRR5799828_1.fastq:      79.1% -- replaced with SRR5799828_1.fastq.gz
+Compressing File -> SRR5799828_2.fastq
+SRR5799828_2.fastq:      81.4% -- replaced with SRR5799828_2.fastq.gz
+Compressing File -> SRR5799829_1.fastq
+SRR5799829_1.fastq:      77.5% -- replaced with SRR5799829_1.fastq.gz
+Compressing File -> SRR5799829_2.fastq
+SRR5799829_2.fastq:      79.2% -- replaced with SRR5799829_2.fastq.gz
+Compressing File -> SRR5799831_1.fastq
+SRR5799831_1.fastq:      76.2% -- replaced with SRR5799831_1.fastq.gz
+Compressing File -> SRR5799831_2.fastq
+SRR5799831_2.fastq:      79.6% -- replaced with SRR5799831_2.fastq.gz
+Compressing File -> SRR5799832_1.fastq
+SRR5799832_1.fastq:      79.1% -- replaced with SRR5799832_1.fastq.gz
+Compressing File -> SRR5799832_2.fastq
+SRR5799832_2.fastq:      81.4% -- replaced with SRR5799832_2.fastq.gz
+Compressing File -> SRR5799833_1.fastq
+SRR5799833_1.fastq:      79.1% -- replaced with SRR5799833_1.fastq.gz
+Compressing File -> SRR5799833_2.fastq
+SRR5799833_2.fastq:      77.6% -- replaced with SRR5799833_2.fastq.gz
+Compressing File -> SRR5799834_1.fastq
+SRR5799834_1.fastq:      78.9% -- replaced with SRR5799834_1.fastq.gz
+Compressing File -> SRR5799834_2.fastq
+SRR5799834_2.fastq:      81.3% -- replaced with SRR5799834_2.fastq.gz
+Compressing File -> SRR5799835_1.fastq
+SRR5799835_1.fastq:      81.4% -- replaced with SRR5799835_1.fastq.gz
+Compressing File -> SRR5799835_2.fastq
+SRR5799835_2.fastq:      78.9% -- replaced with SRR5799835_2.fastq.gz
+Compressing File -> SRR5799836_1.fastq
+SRR5799836_1.fastq:      78.8% -- replaced with SRR5799836_1.fastq.gz
+Compressing File -> SRR5799836_2.fastq
+SRR5799836_2.fastq:      79.2% -- replaced with SRR5799836_2.fastq.gz
+Compressing File -> SRR5799837_1.fastq
+SRR5799837_1.fastq:      79.0% -- replaced with SRR5799837_1.fastq.gz
+Compressing File -> SRR5799837_2.fastq
+SRR5799837_2.fastq:      73.8% -- replaced with SRR5799837_2.fastq.gz
+Compressing File -> SRR5799838_1.fastq
+SRR5799838_1.fastq:      79.9% -- replaced with SRR5799838_1.fastq.gz
+Compressing File -> SRR5799838_2.fastq
+SRR5799838_2.fastq:      79.1% -- replaced with SRR5799838_2.fastq.gz
+Compressing File -> SRR5799839_1.fastq
+SRR5799839_1.fastq:      79.3% -- replaced with SRR5799839_1.fastq.gz
+Compressing File -> SRR5799839_2.fastq
+SRR5799839_2.fastq:      79.1% -- replaced with SRR5799839_2.fastq.gz
+Compressing File -> SRR5799840_1.fastq
+SRR5799840_1.fastq:      79.2% -- replaced with SRR5799840_1.fastq.gz
+Compressing File -> SRR5799840_2.fastq
+SRR5799840_2.fastq:      77.4% -- replaced with SRR5799840_2.fastq.gz
+Compressing File -> SRR5799841_1.fastq
+SRR5799841_1.fastq:      81.8% -- replaced with SRR5799841_1.fastq.gz
+Compressing File -> SRR5799841_2.fastq
+SRR5799841_2.fastq:      79.5% -- replaced with SRR5799841_2.fastq.gz
+Compressing File -> SRR5799842_1.fastq
+SRR5799842_1.fastq:      78.4% -- replaced with SRR5799842_1.fastq.gz
+Compressing File -> SRR5799842_2.fastq
+SRR5799842_2.fastq:      79.2% -- replaced with SRR5799842_2.fastq.gz
+Compressing File -> SRR5799843_1.fastq
+SRR5799843_1.fastq:      79.4% -- replaced with SRR5799843_1.fastq.gz
+Compressing File -> SRR5799843_2.fastq
+SRR5799843_2.fastq:      78.9% -- replaced with SRR5799843_2.fastq.gz
+Compressing File -> SRR5799844_1.fastq
+SRR5799844_1.fastq:      79.2% -- replaced with SRR5799844_1.fastq.gz
+Compressing File -> SRR5799844_2.fastq
+SRR5799844_2.fastq:      81.5% -- replaced with SRR5799844_2.fastq.gz
+Compressing File -> SRR5799845_1.fastq
+SRR5799845_1.fastq:      79.4% -- replaced with SRR5799845_1.fastq.gz
+Compressing File -> SRR5799845_2.fastq
+SRR5799845_2.fastq:      74.6% -- replaced with SRR5799845_2.fastq.gz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
