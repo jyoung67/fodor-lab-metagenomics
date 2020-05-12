@@ -1,0 +1,36 @@
+# Install BiolocJ and run test pipeline on cluster
+cd $APP/BioLockJ  
+./install  
+biolockj --help       
+$biolockj $BLJ/templates/myFirstPipeline/myFirstPipeline.properties
+
+cd /projects/afodor_research/jyoung/srascripts
+cd /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/
+
+
+ls -l --block-size=M
+
+module load sra-tools
+
+mkdir -p /projects/afodor_research/jyoung/sratest
+
+dos2unix /mnt/c/Users/young/Documents/GitHub/Fodor-lab/Rifaximin_Study/scripts/Cluster_Files/metadata_test.tsv 
+dos2unix /mnt/c/Users/young/Documents/GitHub/Fodor-lab/Rifaximin_Study/scripts/Cluster_Files/sraDownload.properties_test.txt
+
+/projects/afodor_research/jyoung/sratest/
+mkdir /nobackup/afodor_research/datasets/rifaximin/jyoung/sratest/
+
+/projects/afodor_research/jyoung/sratest/metadata_test.tsv
+
+/projects/afodor_research/jyoung/sratest/sraDownload.properties_test.txt
+
+
+
+biolockj /projects/afodor_research/jyoung/sratest/sraDownload.properties_test.txt 
+
+
+exe.fasterq-dump=/projects/afodor_research/jyoung/sraToolkit/sratoolkit.2.10.5-ubuntu64/bin/fasterq-dump
+
+cd /projects/afodor_research/jyoung/sratest 
+vim sraDownload.properties_test.txt
+

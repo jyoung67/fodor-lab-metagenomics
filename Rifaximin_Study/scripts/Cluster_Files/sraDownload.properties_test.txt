@@ -1,0 +1,9 @@
+#BioModule biolockj.module.getData.SraDownload
+
+pipeline.disableAddImplicitModules=Y
+sra.accessionIdColumn=sra
+metadata.filePath=/projects/afodor_research/aduong/effectSize/angelakis_metadata.tsv
+sra.destinationDir=
+
+# needed for running on the cluster
+pipeline.defaultProps=${BLJ}/copperhead.properties
