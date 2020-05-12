@@ -10,7 +10,7 @@ analyzeRunMetaData <- function()
   cat("Scheduled visits: ", scheduledVisitsCount, "\n")
   cat("Unscheduled visits: ", unscheduledVisitsCount, "\n")
   accessionIds = ""
-  for (val in df$Run[51:100])
+  for (val in df$Run[251:400])
   {
     accessionIds = paste(accessionIds, val, ",", sep="")
     
