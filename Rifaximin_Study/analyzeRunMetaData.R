@@ -1,6 +1,6 @@
 analyzeRunMetaData <- function()
 {
-  df <- read.table("/Users/young/Documents/Fodor_Lab/Rifaximin_Study/SraRunTable.csv",sep=",",header=TRUE)
+  df <- read.table("https://raw.githubusercontent.com/jyoung67/fodor-lab-metagenomics/master/Rifaximin_Study/SraRunTable.csv",sep=",",header=TRUE)
   v <- as.vector(df$timepoint..run.)
   totalRunCount <- length(v)
   scheduledVisitsCount <- sum(v %in% c("V6","V3","V4","V7","V11"))
