@@ -39,3 +39,17 @@ vim sraDownload.properties_test.txt
 dos2unix /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/gzipfastqfiles.sh
 sh /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/gzipfastqfiles.sh /mnt/c/Users/young/Documents/UNCC_Spring_2020/Genomics/labs/lab01/DataSets/ecoli
 
+cd /nobackup/afodor_research/datasets/rifaximin/jyoung/R1
+cd /projects/afodor_research/jyoung/srascripts
+ls --block-size=M -l *.gz >> lsOutput.log
+
+Add tab in bash:  Control-v, then Tab
+
+ls --block-size=M -l *.gz | awk -v OFS='\t' '{print $9,$5,$6,$7,$8}'
+
+tmpDf <- read.table("/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/rifaximin_data.tsv")
+df <- data.frame(table(substr(tmpDf[,1], 1,10))) 
+
+
+/mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/rifamimin_data.tsv
+
