@@ -3,9 +3,6 @@
 # $1 - path to directory
 # Example: sh /projects/afodor_research/jyoung/srascripts/cd gzipfastqfiles.sh /nobackup/afodor_research/datasets/rifaximin/jyoung/R1
 
-# ids=(${1//,/ })
-# arrLength=${#ids[@]}
-
 outDir=${1}
 cd ${outDir}
 fastqFiles=*.fastq
