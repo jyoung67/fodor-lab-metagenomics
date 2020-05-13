@@ -16,7 +16,7 @@ analyzeRunMetaData <- function()
     
     
   }
-  print(paste("sh sradownload.sh", accessionIds))
+ # print(paste("sh sradownload.sh", accessionIds))
   
   
   

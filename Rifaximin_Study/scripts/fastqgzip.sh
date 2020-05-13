@@ -7,13 +7,13 @@
 #PBS -l mem=16GB
 #=====END PBS OPTIONS====
 
-outDir="/nobackup/afodor_research/datasets/rifaximin/jyoung/R1"
-cd ${outDir}
+targetDir="/nobackup/afodor_research/datasets/rifaximin/jyoung/R1"
+cd ${targetDir}
 fastqFiles=*.fastq
 now="$(date +'%Y/%m/%d %H:%M:%S')"
-numOfFoundFiles=$(ls -l ${outDir}/*.fastq | wc -l)
+numOfFoundFiles=$(ls -l ${targetDir}/*.fastq | wc -l)
 
-printf "Number of '.fastq' files found in ${outDir}:  %d\n" "${numOfFoundFiles}"
+printf "Number of '.fastq' files found in ${targetDir}:  %d\n" "${numOfFoundFiles}"
 
 i=1
 for fastqFile in ${fastqFiles}; do
