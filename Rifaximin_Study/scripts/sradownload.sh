@@ -9,8 +9,11 @@ arrLength=${#ids[@]}
 printf "Start Time:  %s\n" "$now"
 printf "Array length  %d\n" "$arrLength"
 outDir="/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/"
-# Explicitly loading later version of sra-tools, version 2.10.5
-module load sra-tools/2.10.5
+
+# Explicitly loading later version of sra-tools, version 2.10.5 
+# (TODO:  test the following two commands within this bash script)
+# module unload sra-tools
+# module load sra-tools/2.10.5
 
 # download files via accession id
 for i in ${!ids[@]}; do
