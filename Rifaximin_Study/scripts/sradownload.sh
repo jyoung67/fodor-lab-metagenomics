@@ -9,22 +9,13 @@ arrLength=${#ids[@]}
 printf "Start Time:  %s\n" "$now"
 printf "Array length  %d\n" "$arrLength"
 outDir="/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/"
-
-module load sra-tools
+# Explicitly loading later version of sra-tools, version 2.10.5
+module load sra-tools/2.10.5
 
 # download files via accession id
 for i in ${!ids[@]}; do
     echo "**********($((i+1))/${arrLength}):Downloading ${ids[$i]}**********"
    fasterq-dump ${ids[$i]} --split-files --skip-technical -O ${outDir}
-done
-
-
-cd ${outDir}
-# compress .fastq files
-for f in *.fastq; do
-    [ -f "${f}" ] || break
-    echo "Compressing File -> ${f}"
-    gzip ${f} -v
 done
 
 printf "End Time:  %s\n" "$(date +'%Y/%m/%d %H:%M:%S')"

@@ -34,3 +34,8 @@ exe.fasterq-dump=/projects/afodor_research/jyoung/sraToolkit/sratoolkit.2.10.5-u
 cd /projects/afodor_research/jyoung/sratest 
 vim sraDownload.properties_test.txt
 
+
+
+dos2unix /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/gzipfastqfiles.sh
+sh /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/gzipfastqfiles.sh /mnt/c/Users/young/Documents/UNCC_Spring_2020/Genomics/labs/lab01/DataSets/ecoli
+
