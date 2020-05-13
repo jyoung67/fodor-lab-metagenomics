@@ -7,7 +7,7 @@ outDir=${1}
 cd ${outDir}
 fastqFiles=*.fastq
 now="$(date +'%Y/%m/%d %H:%M:%S')"
-numOfFoundFiles=$(ls -lR ${outDir}/*.fastq | wc -l)
+numOfFoundFiles=$(ls -l ${outDir}/*.fastq | wc -l)
 
 printf "Number of '.fastq' files found in ${outDir}:  %d\n" "${numOfFoundFiles}"
 
