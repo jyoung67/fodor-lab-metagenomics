@@ -1,7 +1,7 @@
 #! /bin/bash
 # call this script with one parameter
 # $1 - comma-delimited SRA accession id's (no spaces)
-# Example:  sradownload.sh SRR5799796,SRR5799797,SRR5799798,SRR5799799,SRR5799800,SRR5799801,SRR5799802,SRR5799803
+# Example:  sh sradownload.sh SRR5799796,SRR5799797,SRR5799798,SRR5799799,SRR5799800,SRR5799801,SRR5799802,SRR5799803
 
 now="$(date +'%Y/%m/%d %H:%M:%S')"
 ids=(${1//,/ })
