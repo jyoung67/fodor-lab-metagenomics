@@ -2,7 +2,8 @@ reviewRifaximinDatasets <- function()
 {
   sourceData <- as.vector(read.table("https://raw.githubusercontent.com/jyoung67/fodor-lab-metagenomics/master/Rifaximin_Study/SraRunTable.csv",sep=",",header=TRUE)$Run)
   
-  tmpDf <- read.table("https://raw.githubusercontent.com/jyoung67/fodor-lab-metagenomics/master/Rifaximin_Study/rifaximin_data.tsv", sep="\t", header=FALSE)
+  # tmpDf <- read.table("https://raw.githubusercontent.com/jyoung67/fodor-lab-metagenomics/master/Rifaximin_Study/rifaximin_data.tsv", sep="\t", header=FALSE)
+  tmpDf <- read.table("/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/mixed.tsv", sep="\t", header=FALSE)
   frequencyCounts <- data.frame(table(substr(tmpDf[,1], 1,10))) 
   targetData <- unique(frequencyCounts$Var1)
   

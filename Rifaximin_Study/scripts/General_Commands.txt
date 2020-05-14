@@ -45,7 +45,14 @@ ls --block-size=M -l *.gz >> lsOutput.log
 
 Add tab in bash:  Control-v, then Tab
 
-ls --block-size=M -l *.gz | awk -v OFS='/t' '{print $9,$5,$6,$7,$8}'
+
+
+ls --block-size=M -l *.fastq | wc -l
+
+ls --block-size=M -l *.fastq | awk -v OFS='\t' '{print $9,$5,$6,$7,$8}' >> /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/remaining_fastq_files.tsv
+
+/mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/
+
 
 tmpDf <- read.table("/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/rifaximin_data.tsv")
 df <- data.frame(table(substr(tmpDf[,1], 1,10))) 
@@ -53,11 +60,22 @@ df <- data.frame(table(substr(tmpDf[,1], 1,10)))
 
 /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/rifamimin_data.tsv
 
-cd /nobackup/afodor_research/datasets/rifaximin/jyoung/R1
-cd /projects/afodor_research/jyoung/srascripts
+
+qsub -N compressFastqFiles fastqgzip.sh
 
 dos2unix /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/fastqgzip.sh
 
-qsub -N compressFastqFiles fastqgzip.sh
+
+cd /nobackup/afodor_research/datasets/rifaximin/jyoung/R1
+cd /projects/afodor_research/jyoung/srascripts
+
+ls --block-size=M -l *.gz | awk -v OFS='\t' '{print $9,$5,$6,$7,$8}'
+
+qstat 1845814.cph-m1.uncc.edus
+
+scp jyoun144@hpc.uncc.edu:/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/mixed.tsv /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study
+
+scp jyoun144@hpc.uncc.edu:/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/remaining_fastq_files.tsv /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study
+
 
 
