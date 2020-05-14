@@ -3,7 +3,8 @@ reviewRifaximinDatasets <- function()
   sourceData <- as.vector(read.table("https://raw.githubusercontent.com/jyoung67/fodor-lab-metagenomics/master/Rifaximin_Study/SraRunTable.csv",sep=",",header=TRUE)$Run)
   
   # tmpDf <- read.table("https://raw.githubusercontent.com/jyoung67/fodor-lab-metagenomics/master/Rifaximin_Study/rifaximin_data.tsv", sep="\t", header=FALSE)
-  tmpDf <- read.table("/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/mixed.tsv", sep="\t", header=FALSE)
+  # tmpDf <- read.table("/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/mixed.tsv", sep="\t", header=FALSE)
+  tmpDf <- read.table("/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/compressed_fastq_files.tsv", sep="\t", header=FALSE)
   frequencyCounts <- data.frame(table(substr(tmpDf[,1], 1,10))) 
   targetData <- unique(frequencyCounts$Var1)
   
@@ -11,10 +12,11 @@ reviewRifaximinDatasets <- function()
   missingFiles <- sourceData[!sourceData %in% targetData]
   numOfMissingFiles <- length(missingFiles)
   cat("Number of missing downloaded files: ", numOfMissingFiles, "\n")
+  sraDownloadScript <- "sh sradownload.sh "
   if(numOfMissingFiles > 0)
   {
     # print(missingFiles)
-    sraDownloadScript <- "sh sradownload.sh "
+    
     for(f in missingFiles)
     {
       sraDownloadScript <- paste(sraDownloadScript, f, ",", sep = "")

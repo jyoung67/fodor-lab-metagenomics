@@ -58,8 +58,7 @@ tmpDf <- read.table("/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaxi
 df <- data.frame(table(substr(tmpDf[,1], 1,10))) 
 
 
-/mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/rifamimin_data.tsv
-
+/mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study/scripts/
 
 qsub -N compressFastqFiles fastqgzip.sh
 
@@ -69,7 +68,7 @@ dos2unix /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_St
 cd /nobackup/afodor_research/datasets/rifaximin/jyoung/R1
 cd /projects/afodor_research/jyoung/srascripts
 
-ls --block-size=M -l *.gz | awk -v OFS='\t' '{print $9,$5,$6,$7,$8}'
+ls --block-size=M -l *.gz | awk -v OFS='\t' '{print $9,$5,$6,$7,$8}' >> /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/compressed_fastq_files.tsv
 
 qstat 1846528.cph-m1.uncc.edu
 
@@ -78,6 +77,11 @@ $qstat -u jyoun144
 scp jyoun144@hpc.uncc.edu:/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/mixed.tsv /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study
 
 scp jyoun144@hpc.uncc.edu:/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/remaining_fastq_files.tsv /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study
+
+ls --block-size=M -l *.gz | awk -v OFS='\t' '{print $9,$5,$6,$7,$8}' >> /nobackup/afodor_research/datasets/rifaximin/jyoung/R1/compressed_fastq_files.tsv
+
+scp jyoun144@hpc.uncc.edu:/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/compressed_fastq_files.tsv /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study
+
 
 
 
