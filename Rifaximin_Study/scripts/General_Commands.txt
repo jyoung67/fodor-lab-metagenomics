@@ -71,7 +71,7 @@ cd /projects/afodor_research/jyoung/srascripts
 
 ls --block-size=M -l *.gz | awk -v OFS='\t' '{print $9,$5,$6,$7,$8}'
 
-qstat 1845814.cph-m1.uncc.edus
+qstat 1846461.cph-m1.uncc.edu
 
 scp jyoun144@hpc.uncc.edu:/nobackup/afodor_research/datasets/rifaximin/jyoung/R1/mixed.tsv /mnt/c/Users/young/Documents/GitHub/fodor-lab-metagenomics/Rifaximin_Study
 

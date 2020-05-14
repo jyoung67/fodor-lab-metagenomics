@@ -12,7 +12,7 @@ getRemainingFastqFiles <- function(start=NaN,end=NaN)
     end = numOfRows
   }
   
-  compressionJobCmd <- paste("qsub -N remaining_fastq_files_", start, "_", end, " gzip_set.sh ", sep = "")
+  compressionJobCmd <- paste("qsub -N remaining_fastq_files_", start, "_", end, " gzip_set.sh -v ", sep = "")
   for(aId in df[start:end,1])
   {
     compressionJobCmd <- paste(compressionJobCmd, aId, ",", sep = "")
