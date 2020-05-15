@@ -7,7 +7,9 @@
 #PBS -l mem=16GB
 #=====END PBS OPTIONS====
 
-ids=(${1//,/ })
+# ids=(${1//,/ })
+printf "${runIds}\n"
+ids=(${runIds//" "/ })
 arrLength=${#ids[@]}
 now="$(date +'%Y/%m/%d %H:%M:%S')"
 printf "Start Time:  %s\n" "$now"
@@ -19,6 +21,7 @@ cd ${currentDir}
 # download files via accession id
 for i in ${!ids[@]}; do
    echo "**********($((i+1))/${arrLength}):compressing ${ids[$i]}**********"
-   gzip ${ids[$i]} -v -f                                                                                                                                               done
+    gzip ${ids[$i]} -v -f
+done
 
 printf "End Time:  %s\n" "$(date +'%Y/%m/%d %H:%M:%S')"
